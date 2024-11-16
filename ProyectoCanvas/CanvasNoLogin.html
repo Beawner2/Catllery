@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.CSS">
+    <title>Canvas</title>
+    <script>
+        window.onload=function(){
+        var Pantalla=document.getElementById("PantallaCarga")
+        Pantalla.style.display="block"
+        Pantalla.style.animation="CargarPantalla 3s forwards"
+    // Pantalla.style.transform="scale(.1)"
+    // Pantalla.style.width="50%"
+    // Pantalla.style.borderRadius="10000px"
+    // Pantalla.style.left="25%"
+}
+    </script>
+</head>
+<body>
+    <div id="PantallaCarga">
+        <svg id="CargaSVG" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="PEsclaretaI" cx="520" cy="500" r="43"  fill="white"/>
+            <circle id="PEsclaretaD" cx="380" cy="500" r="43"  fill="white"/>
+            <circle id="POjoI" cx="520" cy="500" r="34"  fill="black"/>
+            <circle id="POjoD" cx="380" cy="500" r="34"  fill="black"/>
+            </svg>
+    </div>    
+    <nav>
+        <ul>
+            <li><a href="/index.html"><img src="/Img/Logo.png" height="80px" alt="Logo"></a></li>
+            <li><a href="#Lienzo">Inicio</a></li>
+            <li><a href="../index.html">Galería</a></li>
+            <li><a href="../index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    <div id="BloqueoUsuario">
+        <h1>Para poder usar el canvas deber iniciar sesión como artista</h1>
+    </div>
+    <div id="Contenido-canvas">
+ 
+        <div id="Lienzo">
+        
+            <canvas id="canvas" class="canvas" width="1180px" height="700px"
+            onmouseout="levantarCursor(event)"
+            onmousemove="presionando(event)"
+            onmousedown="clickInicial(event)"
+            onmouseup="levantarCursor()"
+            onclick="dibujarFiguras(event)">
+            </canvas>
+        
+        </div>
+        <div id="Botones">
+            <div id="Acciones">
+                <input type="button" value="Dehacer" onclick="deshacer()">
+                <input type="button" value="Goma" onclick="CambiarOpcion(4,event)">
+                <input type="button" value="Lapiz" onclick="CambiarOpcion(5,event)">
+                <input type="button" value="Borrar" onclick="borrar()">
+                <input type="button" value="Guarda" onclick="GuardarCanvas()">
+
+                <!-- <input type="number" value="" id="TamanoLinea"> -->            
+            </div>
+            <div id="OpLinea">
+                <!-- <label class="lbl-rango-g-linea" id="lbl-rango-g-linea"></label> -->
+                <p>Grosor de la linea</p>
+                <input type="range" id="input-rango-g-linea" value="50" min="10" max="100" onchange="cambiarValor()"></input>
+                <input type="color" id="color" value="#000000">
+            </div>
+            
+            
+            <!-- <input type="checkbox" id="figuraCuadrado" name="Figura" onchange="CambiarOpcion(3,event)"> -->
+            
+            
+            
+            <!-- <label for="figura">
+                <img src="/Recursos/3.png" alt="">
+            </label> -->
+            <div id="OpImagen">
+                <img id="img-drag" src="/ProyectoCanvas/Recursos/4.png" alt="">
+                <!-- <label class="lbl-rango-img" id="lbl-rango-img"></label> -->
+                <input type="button" value="Negativo" onclick="aplicarFiltro()">
+                <input type="button" value="Escala de grises" onclick="aplicarFiltro2()">
+                <input type="button" value="brillo" onclick="aplicarFiltro3()">
+                <input type="button" value="contraste" onclick="aplicarFiltro4()">
+            </div>
+            
+        
+        
+            <div id="figuras">
+                <div class="cuadrado" onclick="CambiarOpcion(0,event)"></div>
+                <div class="circulo" onclick="CambiarOpcion(1,event)"></div>
+                <div class="linea" onclick="CambiarOpcion(2,event)"></div>
+                <div id="img-seleccion" class="img-Selecion" onclick="CambiarOpcion(3,event)">
+                    <input type="file" id="input-file-img" onchange="seleccionarImagen(event)">
+                </div>
+                <div>
+                    <p>Tamaño de la imagen</p>
+                    <input type="range" id="input-rango-img" value="50" min="10" max="100" onchange="txtImgRango()"></input>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="Foot1">
+            <img src="/Img/Logo.png" alt="Logo">
+        </div>
+        <div id="Foot2">
+            <div id="Foot2-1">
+                <!-- Navegacion -->
+                <ul>
+                    <Li><a href="#">Inicio</a></Li>
+                    <Li><a href="">Canvas</a></Li>
+                    <Li><a href="">Perfil</a></Li>
+                    <Li><a href="">Galería</a></Li>
+                </ul>
+            </div>
+            <div id="Foot2-2">
+                <!-- Contacto -->
+                <h2>Hola</h2>
+                Soy Werner, estudiando de Diseño Digital en Medios Interactivos (DDMI) en la universidad Autónoma de Ciudad Juarez. <br> Este es un proyecto desarrollado para la clase de Interfaz dinámica, sin ningún propósito <br> 
+            </div>
+            <div id="Foot2-3">
+                <!-- Redes -->
+                <a href=""> <img src="/Img/fb.png" alt=""></a>
+                <a href=""><img src="/Img/tw.png" alt=""></a>
+                <a href=""><img src="/Img/igm.png" alt=""></a>
+                <a href=""><img src="/Img/yt.png" alt=""></a>
+            </div>
+            <div id="Foot2-4">
+                <!-- Formulario -->
+                <form>
+                    <h2>Contacto</h2>
+                    <div class="Input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+
+                        <label for="email">Correo</label>
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+
+                        <input id="btn" type="button" type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div id="Foot3">
+            <!-- Legal -->
+            <a href="">Aviso Legal</a>
+            <a href=""> Aviso de Privacidad</a>
+            <a href="">Políticas sobre Cookies</a>
+        </div>
+    </footer>
+</body>
+<script src="../JS/Script.js"></script>
+<script src="JS/canvas.js"></script>
+<script src="JS/menu.js"></script>
+<script src="JS/SeleccionArchivo.js"></script>
+<script src="JS/DragandDrop.js"></script>
+<script src="JS/filtros.js"></script>
+</html>

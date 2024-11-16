@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ID</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div id="PantallaCarga">
+        <svg id="CargaSVG" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="PEsclaretaI" cx="520" cy="500" r="43"  fill="white"/>
+            <circle id="PEsclaretaD" cx="380" cy="500" r="43"  fill="white"/>
+            <circle id="POjoI" cx="520" cy="500" r="34"  fill="black"/>
+            <circle id="POjoD" cx="380" cy="500" r="34"  fill="black"/>
+            </svg>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="GaleriaArtistaAcesso.html"><img src="/Img/Logo.png" height="80px" alt="Logo"></a></li>
+                <li><a href="#LandPage">Inicio</a></li>
+                <li><a href="ProyectoCanvas/Canvas.html">Canvas</a></li>
+                <li><a href="index.html">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        
+    
+    <div id="LandPage">
+        <div id="SVG">
+            <svg id="LogoSVG" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame 1" clip-path="url(#clip0_55_2)">
+                <g id="Palo">
+                <path id="Ellipse 7" d="M580 924C580 974.258 539.258 1015 489 1015C438.742 1015 398 974.258 398 924C398 873.742 438.742 833 489 833C539.258 833 580 873.742 580 924Z" fill="black"/>
+                <path id="Vector 2" d="M601 751.5C510.898 777.633 460.697 777.762 371.5 762.5C354.768 822.464 364.341 847.284 402 882C448 799 546.5 820 576.5 882C619.757 837.394 624.227 808.652 601 751.5Z" fill="black"/>
+                </g>
+                <g id="GatoLogo">
+                <path id="Gato" d="M521.73 402.5C569.036 417.215 590.416 432.094 619.73 470C556.689 443.022 518.624 442.502 448.23 455C410.453 425.102 387.476 413.783 344.23 400.5C360.921 429.527 362.878 446.342 357.23 477C331.208 491.364 318.892 501.478 300.73 523C276.387 506.756 264.622 495.565 248.73 470C217.206 589.205 232.334 645.592 300.73 733C443.21 783.241 528.181 779.738 689.73 711C858.73 498 711.73 335 614.23 286.5C516.73 238 519.237 118.053 585.73 45C585.73 45 404.23 84.5 339.73 204C275.23 323.5 360.231 372.271 521.73 402.5Z" fill="black"/>
+                <circle id="EsclaretaI" cx="406.252" cy="532.171" r="23"  fill="white"/>
+                <circle id="EsclaretaD" cx="345.171" cy="577.393" r="23"  fill="white"/>
+                <circle id="OjoI" cx="406.252" cy="532.171" r="14" transform="rotate(-36.5148 406.252 532.171)" fill="black"/>
+                <circle id="OjoD" cx="345.171" cy="577.394" r="14" transform="rotate(-36.5148 345.171 577.394)" fill="black"/>
+                </g>
+                </g>
+                </svg>
+        </div>
+        <div id="DescripcionPro">
+            <h1>Catllery</h1>
+            <p>Imagina una página web encantadora y vibrante que fusiona el mundo del arte con el amor por las mascotas. Desde la primera vista, te sumerges en un universo lleno de color y creatividad, donde las obras de arte celebran la presencia y la belleza de nuestros compañeros peludos.</p>
+
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content" id="img01"></div>
+        <div id="caption"></div>
+      </div>
+    <div id="Galeria" >
+        <div id="IMG-Cont" class="Oculto" >
+            <div class="Imagen" id="IlusA1" onmouseover="MostrarDes(0)" onmouseout="OcultarDes()" onclick="EnGrande(1)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/1630165deb8b880aac50e39c5846c469.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA1">
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Autopurrtrato</p>
+                <P>Roberto Martínez Pérez</P>
+            </div>
+
+
+          
+
+
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto" >
+            <div class="Imagen" id="IlusA2" onmouseover="MostrarDes(1)" onmouseout="OcultarDes()" onclick="EnGrande(2)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/1cc369a9bae9ce9d7f802a1c86758a45.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA2">
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Plato caído</p>
+                <P>Ana García López</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto" >
+            <div class="Imagen" id="IlusA3" onmouseover="MostrarDes(2)" onmouseout="OcultarDes()" onclick="EnGrande(3)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/28c0bb196c9c43a3a98e85d99fadd2b2.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA3">
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Vinny Van Gogh</p>
+                <P>Javier Rodríguez Sánchez</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto">
+            <div class="Imagen" id="IlusA4" onmouseover="MostrarDes(3)" onmouseout="OcultarDes()" onclick="EnGrande(4)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/3af7190ca8ba373de08ac82deee6cc05.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA4">
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Disfrutando el sol</p>
+                <P>Elena Martín Gómez</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto">
+            <div class="Imagen" id="IlusA5" onmouseover="MostrarDes(4)" onmouseout="OcultarDes()" onclick="EnGrande(5)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/3cb4ab148b3aa826d2592756a1a2997b.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA5">
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>La traición</p>
+                <P>Pedro López Fernández</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto">
+            <div class="Imagen" id="IlusA6" onmouseover="MostrarDes(5)" onmouseout="OcultarDes()" onclick="EnGrande(6)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/bcc8db2ae92e9b165177559330445474.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA6">
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Lecturas profundas</p>
+                <P>Laura González Ruiz</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto">
+            <div class="Imagen" id="IlusA7" onmouseover="MostrarDes(6)" onmouseout="OcultarDes()" onclick="EnGrande(7)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/dbbf04b44bc462005e7450606ea91fce.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA7" >
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Necesidad</p>
+                <P>Diego Pérez Hernández</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto">
+            <div class="Imagen" id="IlusA8" onmouseover="MostrarDes(7)" onmouseout="OcultarDes()" onclick="EnGrande(8)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/e1a1d3db6d64ebe466375dcd54bdc7fa.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA8" >
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>La ópera</p>
+                <P>Marta Sánchez Díaz</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="IMG-Cont" class="Oculto">
+            <div class="Imagen" id="IlusA9" onmouseover="MostrarDes(8)" onmouseout="OcultarDes()" onclick="EnGrande(9)">
+                <!-- Contenedor para la imagen y las interacciones -->
+                <!-- <img src="/Img/f26a938667ecf0728436b559cc67a66b.jpg" alt=""> -->
+            </div>
+            <div class="InfoOMO" id="InfA9" >
+                <!-- informacion que solo se muestra con on mouse over -->
+                <p>Hambriento</p>
+                <P>José Ramírez García</P>
+            </div>
+            <div class="InfoOC">
+                <!-- informacion que solo se muestra con on clic -->
+                <p><b>Nombre</b></p>
+                <p></p>
+                <p><b>Autor</b></p>
+                <p></p>
+                <p><b>Fecha</b></p>
+                <p></p>
+                <p><b>Descripción</b></p>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div id="Foot1">
+            <img src="/Img/Logo.png" alt="Logo">
+        </div>
+        <div id="Foot2">
+            <div id="Foot2-1">
+                <!-- Navegacion -->
+                <ul>
+                    <Li><a href="#">Inicio</a></Li>
+                    <Li><a href="">Canvas</a></Li>
+                    <Li><a href="">Perfil</a></Li>
+                    <Li><a href="">Galería</a></Li>
+                </ul>
+            </div>
+            <div id="Foot2-2">
+                <!-- Contacto -->
+                <h2>Hola</h2>
+                Soy Werner, estudiando de Diseño Digital en Medios Interactivos (DDMI) en la universidad Autónoma de Ciudad Juarez. <br> Este es un proyecto desarrollado para la clase de Interfaz dinámica, sin ningún propósito <br> 
+            </div>
+            <div id="Foot2-3">
+                <!-- Redes -->
+                <a href=""> <img src="/Img/fb.png" alt=""></a>
+                <a href=""><img src="/Img/tw.png" alt=""></a>
+                <a href=""><img src="/Img/igm.png" alt=""></a>
+                <a href=""><img src="/Img/yt.png" alt=""></a>
+            </div>
+            <div id="Foot2-4">
+                <!-- Formulario -->
+                <form>
+                    <h2>Contacto</h2>
+                    <div class="Input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+
+                        <label for="email">Correo</label>
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+
+                        <input id="btn" type="button" type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div id="Foot3">
+            <!-- Legal -->
+            <a href="">Aviso Legal</a>
+            <a href=""> Aviso de Privacidad</a>
+            <a href="">Políticas sobre Cookies</a>
+        </div>
+    </footer>
+    <script src="JS/Script.js"></script>
+</body>
+</html>

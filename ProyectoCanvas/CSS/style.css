@@ -1,0 +1,160 @@
+:root {
+    --Color-1: #f89931;
+    --Color-2: #fbf3f3;
+    --Color-3: #23768e;
+    --Color-4: #052538;
+    --Color-Footer1: #353535;
+    --bg-color: #FEE7B5;
+    --bt-color: #ED5D40;
+  }
+ 
+
+#Contenido-canvas{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    margin-left: 50px;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+  
+#Lienzo{
+    width: 80%;
+    height: 70%;
+    background-color: var(--Color-2);
+    filter: contrast();
+}
+
+.canvas{
+    border: 5px solid;
+    border-color: black;
+    background-color: white;
+    border-radius: 25px;
+ 
+}
+#Botones{
+    width: 50%;
+    height: 60%;
+    display: grid;
+    grid-template-areas: 
+    "A"
+    "B"
+    "C"
+    "D"
+    ;
+}
+/* #Botones input{
+    height: 50px;
+    border-radius: 5px;
+    background-color:var(--bt-color) ;
+} */
+
+
+#Acciones{
+    width: 100%;
+    height: auto;
+    grid-area: A;   
+}
+#OpLinea{
+    width: 100%;
+    height: auto;
+    grid-area: B;
+}
+#OpImagen{
+    width: 100%;
+    height: auto;
+    grid-area: C;
+    display: grid;
+}
+#figuras{
+    width: 100%;
+    height: auto;
+    grid-area: D;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.img-Selecion{
+    width: 100px;
+    height: 100px;
+    background-image: url("../Recursos/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    cursor: pointer;
+}
+.img-Selecion:hover{
+    background-color: #ca7b26;
+}
+.img-Selecion input{
+    background-color: none;  
+}
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: var(--Color-1);
+    border-radius: 5px;
+    background-image: url(/ProyectoCanvas/Recursos/Iconos/cuadrado.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.cuadrado:hover{
+    background-color: #ca7b26;
+}
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: var(--Color-1);
+    border-radius: 5px;
+    background-image: url(/ProyectoCanvas/Recursos/Iconos/Circulo.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.circulo:hover{
+    background-color: #ca7b26;
+}
+.linea{
+    width: 100px;
+    height: 100px;
+    background-color: var(--Color-1);
+    border-radius: 5px;
+    background-image: url(/ProyectoCanvas/Recursos/Iconos/linea-diagonal.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.linea:hover{
+    background-color: #ca7b26;
+}
+
+
+
+#BloqueoUsuario{
+    display: flex;
+    position: absolute; 
+    top: 1000px; 
+    z-index: 0; 
+    width: 150%;
+    height: 100%;
+    z-index: 10000;
+    background-color: var(--Color-1);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#BloqueoUsuario h1{
+    color: var(--Color-2);
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <script>
+        window.onload=function(){
+    var Pantalla=document.getElementById("PantallaCarga")
+    Pantalla.style.display="block"
+    Pantalla.style.animation="CargarPantalla 3s forwards"
+    }
+    </script>
+</head>
+<body>
+    <div id="PantallaCarga">
+        <svg id="CargaSVG" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="PEsclaretaI" cx="520" cy="500" r="43"  fill="white"/>
+            <circle id="PEsclaretaD" cx="380" cy="500" r="43"  fill="white"/>
+            <circle id="POjoI" cx="520" cy="500" r="34"  fill="black"/>
+            <circle id="POjoD" cx="380" cy="500" r="34"  fill="black"/>
+            </svg>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="/Img/Logo.png" height="80px" alt="Logo"></a></li>
+            <li><a href="index.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    <div id="Contenido">
+        <div id="Ticket">
+            <div id="Fondo">
+                <img src="" alt="">
+                <div class="contenido" id="oculto">
+                    <div class="Datos">
+                    <h2 id="info-nombre"></h2>
+                    <p id="info-cuenta"></p>
+                    <p id="info-fecha"></p>
+                    <p id="info-trabajos"></p>
+                    <h2>Accesos</h2>
+                    <a id="GaleriaL" href="">Galería</a> 
+                    <a id="CanvasL" href="">Canvas</a>
+                    
+                </div>
+                </div>
+
+            </div>
+            <div class="contenedor-form">
+                <div id="info-foto">
+
+                </div>
+                <form action="" id="formulario">
+                    <h1>Iniciar sesión</h1>
+                    <input type="text" name="nombreUsuario" id="nombreUsusario" placeholder="Usuario">
+                    <input type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+                    <input id="Btn" type="button" value="Continuar"  onclick="validarDatos(event)">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="Foot1">
+            <img src="/Img/Logo.png" alt="Logo">
+        </div>
+        <div id="Foot2">
+            <div id="Foot2-1">
+                <!-- Navegacion -->
+                <ul>
+                    <Li><a href="#">Inicio</a></Li>
+                    <Li><a href="">Canvas</a></Li>
+                    <Li><a href="">Perfil</a></Li>
+                    <Li><a href="">Galería</a></Li>
+                </ul>
+            </div>
+            <div id="Foot2-2">
+                <!-- Contacto -->
+                <h2>Hola</h2>
+                Soy Werner, estudiando de Diseño Digital en Medios Interactivos (DDMI) en la universidad Autónoma de Ciudad Juarez. <br> Este es un proyecto desarrollado para la clase de Interfaz dinámica, sin ningún propósito <br> 
+            </div>
+            <div id="Foot2-3">
+                <!-- Redes -->
+                <a href=""> <img src="/Img/fb.png" alt=""></a>
+                <a href=""><img src="/Img/tw.png" alt=""></a>
+                <a href=""><img src="/Img/igm.png" alt=""></a>
+                <a href=""><img src="/Img/yt.png" alt=""></a>
+            </div>
+            <div id="Foot2-4">
+                <!-- Formulario -->
+                <form>
+                    <h2>Contacto</h2>
+                    <div class="Input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+
+                        <label for="email">Correo</label>
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+
+                        <input id="btn" type="button" type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div id="Foot3">
+            <!-- Legal -->
+            <a href="">Aviso Legal</a>
+            <a href=""> Aviso de Privacidad</a>
+            <a href="">Políticas sobre Cookies</a>
+        </div>
+    </footer>
+    <script src="/JS/formulario.js"></script>
+</body>
+</html>
