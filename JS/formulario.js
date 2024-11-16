@@ -4,14 +4,14 @@ Usuarios=[
     "nombreUsuario":"WERNER",
     "contraseña":"12345",
     "datosPersonales":{
-        "urlFoto":"../Img/UsuarioArtista.jpg",
+        "urlFoto":"Img/UsuarioArtista.jpg",
         "Nombre":"Werner Martin Pérez",
         "TipoUsuario":"Artista",
         "Fecha":"Miembro desde: 20 de agosto 2022",
         "Trabajos":"10 trabajos publicados",
         "Descripcion":"Artista multidisciplinario apasionado por explorar las intersecciones entre la naturaleza y la tecnología, fusionando elementos tradicionales con nuevas formas de expresión. Con el uso de mezcla única de colores vibrantes, texturas evocativas y conceptos innovadores, invitando al espectador a reflexionar sobre la belleza y complejidad del mundo que nos rodea.",
         "Acceso":"GaleriaArtistaAcesso.html",
-        "AccesoC":"/ProyectoCanvas/Canvas.html",
+        "AccesoC":"ProyectoCanvas/Canvas.html",
     }
     
     }, 
@@ -20,14 +20,14 @@ Usuarios=[
     "nombreUsuario":"ANTONIO",
     "contraseña":"56789",
     "datosPersonales":{
-        "urlFoto":"../Img/UsuarioInvitado.jpg",
+        "urlFoto":"Img/UsuarioInvitado.jpg",
         "Nombre":"Ismael Diaz Carillop",
         "TipoUsuario":"Invitado",
         "Fecha":"Miembro desde: 10 de marzo 2022",
         "Trabajos":"sin trabajos publicados",
         "Descripcion":"Como amante del arte, siempre busco nuevas formas de expresión artística. Disfruto visitando museos y galerías, y me fascina aprender sobre diferentes artistas y movimientos. Tengo una sensibilidad estética que se refleja en mi vida diaria, ya sea en la decoración de mi hogar o en mis hobbies creativos.",
-        "Acceso":"/GaleriaArtista.html",
-        "AccesoC":"/ProyectoCanvas/CanvasInvitado.html",    
+        "Acceso":"GaleriaArtista.html",
+        "AccesoC":"ProyectoCanvas/CanvasInvitado.html",    
     }
         
     }
